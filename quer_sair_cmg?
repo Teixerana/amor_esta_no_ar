@@ -1,145 +1,145 @@
 <!DOCTYPE html>
-<!-- 
-Código escrito por MTHS1901 em um tutorial no YouTube
-Confira: https://www.youtube.com/watch?v=zxxB9SFh9p4
-Este arquivo já esta pronto e você pode mandar para quem quiser
--->
-<html lang="en">
+    <!-- 
+    Código escrito por MTHS1901 em um tutorial no YouTube
+    Confira: https://www.youtube.com/watch?v=zxxB9SFh9p4
+    Este arquivo já esta pronto e você pode mandar para quem quiser
+    -->
+    <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Namora comigo?</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Namora comigo?</title>
+    </head>
 
-<body>
-    <div id="conteudo">
-        <h2>Quer sair comigo?</h2>
-        <div>
-        <button class="btn" onclick="sim()">SIM</button>
-        <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
-        </div>
-        <div id="box">
-            <div id="popaceito">
-                <h3>Então me chama la!</h3>
-                <img src="ana.png" alt="">
-                <a id="instaana" href="https://www.instagram.com/teixerana/"><h2>@teixerana</h2></a>
+    <body>
+        <div id="conteudo">
+            <h2>Quer sair comigo?</h2>
+            <div>
+            <button class="btn" onclick="sim()">SIM</button>
+            <button class="btn" onclick="desvia(this)" onmouseover="desvia(this)">NÃO</button>
             </div>
+            <div id="box">
+                <div id="popaceito">
+                    <h3>Então me chama la!</h3>
+                    <img src="ana.png" alt="">
+                    <a id="instaana" href="https://www.instagram.com/teixerana/"><h2>@teixerana</h2></a>
+                </div>
+            </div>
+
         </div>
+    </body>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
 
-    </div>
-</body>
-<style>
-    *{
-        margin: 0;
-        padding: 0;
-    }
-
-    #conteudo {
-        background-image: url("festive-red-background-valentine.png");
-        background-size: cover;
-        background-position: center;
-        width: 100%;
-        height: 100%;
-        position: fixed;
-        top: 0;
-        left: 0;
-        padding: 10px;
-        text-align: center;
-        font-size: 3vw;
-        color: white;
-        font-family: sans-serif;
-        padding-top: 10%;
-    }
-
-    #box{
-        display: none;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
-
-    #popaceito{
-        position: absolute;
-        width: 50%;
-        height: 40%;
-        background-color: rgb(255, 255, 255);
-        color: black;
-        border-radius: 30px;
-        padding: 5%;
-    }
-
-    #popaceito img{
-        width: 20%;
-        margin-top: 8vh;
-    }
-
-    #instaana{
-        color: black;
-        text-decoration: none;
-        margin: 0;
-    }
-    #instaana h2{
-        margin: 0;
-    }
-    
-
-    .btn {
-        background: black;
-        color: white;
-        border: none;
-        padding: 10px;
-        width: 80px;
-        border-radius: 5px;
-         font-size: 2vw;
-    }
-
-    @media screen and (max-width: 1000px){
         #conteudo {
-        font-size: 6vw;
-        color: white;
-        font-family: sans-serif;
-        padding-top: 25vh;
-    }
-    .btn {
-        background: black;
-        color: white;
-        border: none;
-        padding: 10px;
-        width: 88px;
-        border-radius: 5px;
-        font-size: 4vw;
-        margin-top: 4vh;
-    }
-    #popaceito img{
-        width: 50%;
-        margin-top: 4vh;
-    }
+            background-image: url("festive-red-background-valentine.png");
+            background-size: cover;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            padding: 10px;
+            text-align: center;
+            font-size: 3vw;
+            color: white;
+            font-family: sans-serif;
+            padding-top: 10%;
+        }
 
-</style>
+        #box{
+            display: none;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
 
-<script>
-    function sim() {
-        var insta = document.getElementById("box")
-       insta.style.display = "flex"
+        #popaceito{
+            position: absolute;
+            width: 50%;
+            height: 40%;
+            background-color: rgb(255, 255, 255);
+            color: black;
+            border-radius: 30px;
+            padding: 5%;
+        }
+
+        #popaceito img{
+            width: 20%;
+            margin-top: 8vh;
+        }
+
+        #instaana{
+            color: black;
+            text-decoration: none;
+            margin: 0;
+        }
+        #instaana h2{
+            margin: 0;
+        }
+        
+
+        .btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 80px;
+            border-radius: 5px;
+            font-size: 2vw;
+        }
+
+        @media screen and (max-width: 1000px){
+            #conteudo {
+            font-size: 6vw;
+            color: white;
+            font-family: sans-serif;
+            padding-top: 25vh;
+        }
+        .btn {
+            background: black;
+            color: white;
+            border: none;
+            padding: 10px;
+            width: 88px;
+            border-radius: 5px;
+            font-size: 4vw;
+            margin-top: 4vh;
+        }
+        #popaceito img{
+            width: 50%;
+            margin-top: 5vh;
+        }
     }
+    </style>
 
-    function desvia(btn) {
-        // btn declarado na função
-        btn.style.position = 'absolute';
-        btn.style.bottom = geraPosicao(20, 80);
-        btn.style.left = geraPosicao(20, 80);
-        console.log('opa, desviei...');
-    }
+    <script>
+        function sim() {
+            var insta = document.getElementById("box")
+        insta.style.display = "flex"
+        }
 
-    function geraPosicao(min, max) {
-        return (Math.random() * (max - min) + min) + "%";
-    }
+        function desvia(btn) {
+            // btn declarado na função
+            btn.style.position = 'absolute';
+            btn.style.bottom = geraPosicao(20, 80);
+            btn.style.left = geraPosicao(20, 80);
+            console.log('opa, desviei...');
+        }
 
-    /* Apague se quiser, isso apenas escreve MTHS1901 e o link para o tutorial no console */
-    const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
+        function geraPosicao(min, max) {
+            return (Math.random() * (max - min) + min) + "%";
+        }
 
-</script>
+        /* Apague se quiser, isso apenas escreve MTHS1901 e o link para o tutorial no console */
+        const o = "MTHS1901", e = 90, l = "bold"; console.log(`%c${o}`, "font-size: 90px; font-weight: bold; background: linear-gradient(90deg, red, yellow);"), console.log("Tutorial: https://www.youtube.com/watch?v=zxxB9SFh9p4");
+
+    </script>
 
 </html>
